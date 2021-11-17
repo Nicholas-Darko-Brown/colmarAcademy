@@ -43,6 +43,10 @@ nav .logo span {
     padding-bottom: 5px;
 }
 
+nav .logo i {
+    display: none;
+}
+
 nav .nav-list ul {
     display: flex;
     margin-right: 24px;
@@ -160,6 +164,10 @@ blockquote p::after {
     padding: 16px 0 16px 16px;
 }
 
+.section-two .three {
+    background-color:rgb(194, 194, 170)
+}
+
 .row-content {
     display: flex;
     flex-direction: column;
@@ -174,8 +182,9 @@ blockquote p::after {
 }
 
 
+
 .section-two-container {
-    background-color: beige;
+    background-color:rgb(226, 226, 216);
     padding-bottom: 32px;
 }
 
@@ -260,7 +269,7 @@ blockquote p::after {
 }
 
 .section-three-wrapper .box-two .one {
-    background-color:rgb(194, 194, 170)
+    background-color:rgb(194, 194, 170);
 }
 
 .section-three-wrapper .box-two .mini-box .mini-content {
@@ -278,4 +287,187 @@ blockquote p::after {
     align-items: center;
     justify-content: space-between;
     padding: 16px 24px 32px 24px;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hero-content button {
+        max-width: 100%;
+    }
+
+    .section-one-container {
+        flex-direction: column;
+    }
+
+    .section-one {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .section-box-two {
+        padding: 0 48px;
+        gap: 24px;
+    }
+
+    .section-box-two .box {
+        flex: 40%;
+        max-width: 40%;
+    }
+
+    .section-three-wrapper {
+        flex-direction: column;
+    }
+
+    .section-three-wrapper .box-one {
+        max-width: 100%;
+        flex: 100%;
+        text-align: center;
+    }
+
+    .section-three-wrapper .box-two .mini-box {
+        flex-direction: row;
+    }
+
+    .section-three-wrapper .box-two {
+        display: flex;
+        flex: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-box-two {
+        padding: 0 32px;
+        gap: 24px;
+    }
+
+    .section-box-two .box {
+        flex: 40%;
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-box-two .box {
+        flex: 60%;
+        max-width: 60%;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        padding-bottom: 14px;
+    }
+
+    .footer-wrapper .terms {
+        padding: 32px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .logo-pic {
+        padding-right: 150px;
+    }
+
+    nav .logo span {
+        display: none;
+    }
+
+    nav .nav-list ul {
+        display: none;
+    }
+
+    nav .logo i {
+        display: contents;
+        margin-left: 100px;
+    }
+
+    .hero-container {
+        padding: 0 0 32px 0;
+        gap: 24px;
+    }
+
+    .hero-content {
+        text-align: left;
+        max-width: 350px;
+        margin: 16px;
+    }
+
+    .hero-content button {
+        max-width: 100%;
+    }
+
+    .section-one-container .section-one {
+        display: none;
+    }
+
+    .section-one-container .row {
+        flex-direction: column;
+    }
+
+    .section-one-container .row img {
+        max-width: 100%;
+    }
+
+    .section-two .one, .section-two .two, .section-two .three {
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-two .row-content {
+        margin: 24px 0;
+    }
+
+    .section-two .three {
+        background-color:white;
+    }
+
+    .section-box-two .box {
+        flex: 90%;
+        max-width: 90%;
+    }
+
+    .section-box-two .box .photo, .section-box-two .box .content span, .section-box-two .box .content p {
+        display: none;
+    }
+
+    .section-three-container {
+        border-bottom: none;
+    }
+
+    .section-three-wrapper {
+        padding: 0;
+    }
+
+    .section-three-wrapper .box-one h3, .section-three-wrapper .box-one figure, .section-three-wrapper .box-two {
+        display: none;
+    }
+
+    .section-three-wrapper .box-two .mini-box {
+        margin: 0 auto;
+    }
+
+    .section-three-wrapper .box-two .mini-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-wrapper {
+        display: inline-block;
+    }
+
+    .footer-wrapper .terms {
+        display: none;
+    }
 }
